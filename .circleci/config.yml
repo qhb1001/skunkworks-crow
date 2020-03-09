@@ -96,6 +96,9 @@ jobs:
         - run:
             name: Run unit tests
             command: ./gradlew testDebugUnitTest
+        - run:
+            name: Generate code coverage report
+            command: ./gradlew createMockDebugCoverageReport
         - *persist_debug_workspace
         - store_artifacts:
             path: skunkworks_crow/build/reports
