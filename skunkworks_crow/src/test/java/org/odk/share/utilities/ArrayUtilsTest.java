@@ -3,12 +3,16 @@ package org.odk.share.utilities;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
+import org.robolectric.annotation.Config;
+
+import android.os.Build;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.odk.share.utilities.ArrayUtils.toObject;
 import static org.odk.share.utilities.ArrayUtils.toPrimitive;
 
 @RunWith(RobolectricTestRunner.class)
+@Config(sdk=Build.VERSION_CODES.P)
 public class ArrayUtilsTest {
 
     @Test
