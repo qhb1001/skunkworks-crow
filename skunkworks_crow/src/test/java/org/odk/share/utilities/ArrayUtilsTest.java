@@ -1,11 +1,14 @@
 package org.odk.share.utilities;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.robolectric.RobolectricTestRunner;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.odk.share.utilities.ArrayUtils.toObject;
 import static org.odk.share.utilities.ArrayUtils.toPrimitive;
 
+@RunWith(RobolectricTestRunner.class)
 public class ArrayUtilsTest {
 
     @Test
