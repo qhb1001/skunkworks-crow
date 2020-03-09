@@ -96,6 +96,8 @@ jobs:
         - run:
             name: Run unit tests
             command: ./gradlew testDebugUnitTest
+        - run:
+            name: Generate code coverage report
             command: ./gradlew createDebugCoverageReport
         - *persist_debug_workspace
         - store_artifacts:
