@@ -104,7 +104,7 @@ jobs:
             background: true
         - run:
             name: Generate code coverage report
-            command: ./gradlew test jacocoTestReport
+            command: ./gradlew build jacocoTestReport
         - *persist_debug_workspace
         - store_artifacts:
             path: skunkworks_crow/build/reports
